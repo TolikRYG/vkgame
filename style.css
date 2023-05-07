@@ -1,0 +1,138 @@
+/* Задаем стили CSS для оформления игрового интерфейса */
+
+/* Задаем общие стили для всего документа */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Задаем стили для контейнера игрового интерфейса */
+#game-container {
+  width: 800px;
+  height: 600px;
+  margin: 20px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Задаем стили для элементов с данными об игроках и игре */
+#player1-info,
+#player2-info,
+#game-info {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+/* Задаем стили для фото игроков */
+#player1-photo,
+#player2-photo {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+/* Задаем стили для имени, уровня, здоровья, монет и урона игроков */
+#player1-name,
+#player1-level,
+#player1-hp,
+#player1-coins,
+#player1-damage,
+#player2-name,
+#player2-level,
+#player2-hp,
+#player2-coins,
+#player2-damage {
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* Задаем стили для элементов с предметами игроков */
+#player1-items,
+#player2-items {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Задаем стили для хода, статуса и победителя игры */
+#game-turn,
+#game-status,
+#game-winner {
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Задаем стили для элемента с игровым полем */
+#game-board {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+/* Задаем стили для ячеек игрового поля */
+.cell {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+}
+
+/* Задаем цвета для ячеек игрового поля в зависимости от их значения */
+.cell-1 {
+  background-color: red;
+}
+
+.cell-2 {
+  background-color: green;
+}
+
+.cell-3 {
+  background-color: blue;
+}
+
+.cell-4 {
+  background-color: yellow;
+}
+
+.cell-5 {
+  background-color: purple;
+}
+
+.cell-6 {
+  background-color: orange;
+}
+
+/* Задаем стили для элементов с действиями игрока */
+#game-actions {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Задаем стили для кнопок с действиями игрока */
+#buy-item,
+#watch-ad {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Задаем стили для элементов с друзьями игрока и приглашения в игру */
+#game-friends {
